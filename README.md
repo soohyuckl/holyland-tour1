@@ -1,2 +1,433 @@
 # holyland-tour1
-싸다싸
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SADASA EXPENSIVE.COM</title>
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif}
+html{scroll-behavior:smooth}
+body{background:#f5f7fa;color:#333}
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:#0b2d4d;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 80px;
+z-index:999;
+}
+
+.logo{
+color:#fff;
+font-size:32px;
+font-weight:bold;
+}
+
+nav a{
+color:#fff;
+text-decoration:none;
+margin-left:30px;
+font-size:18px;
+transition:.3s;
+}
+
+nav a:hover{
+color:#f7c948;
+}
+
+.hero{
+height:100vh;
+background:url("https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1600&q=80") center/cover;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.hero-box{
+background:rgba(0,0,0,.6);
+padding:50px;
+border-radius:20px;
+text-align:center;
+color:#fff;
+width:80%;
+max-width:700px;
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:22px;
+margin-bottom:30px;
+}
+
+.btn{
+background:#f7c948;
+color:#222;
+padding:15px 35px;
+border:none;
+font-size:18px;
+border-radius:10px;
+cursor:pointer;
+}
+
+.review{
+background:#fff;
+padding:20px;
+overflow:hidden;
+white-space:nowrap;
+border-top:5px solid #f7c948;
+border-bottom:5px solid #f7c948;
+}
+
+.track{
+display:inline-block;
+animation:move 25s linear infinite;
+font-size:20px;
+font-weight:bold;
+}
+
+.track span{
+margin-right:80px;
+color:#0b2d4d;
+}
+
+@keyframes move{
+0%{transform:translateX(100%)}
+100%{transform:translateX(-100%)}
+}
+
+section{
+padding:80px 8%;
+}
+
+.title{
+text-align:center;
+font-size:42px;
+margin-bottom:50px;
+color:#0b2d4d;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
+}
+
+.card{
+background:#fff;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+.card img{
+width:100%;
+height:230px;
+object-fit:cover;
+}
+
+.content{
+padding:25px;
+}
+
+.price{
+font-size:32px;
+color:#d32f2f;
+font-weight:bold;
+margin:20px 0;
+}
+
+button{
+background:#0b2d4d;
+color:white;
+padding:15px;
+width:100%;
+border:none;
+border-radius:10px;
+font-size:18px;
+cursor:pointer;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:12px;
+transition:.4s;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+}
+
+.schedule{
+background:#fff;
+padding:40px;
+border-radius:15px;
+line-height:2;
+font-size:18px;
+box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+form{
+background:#fff;
+max-width:700px;
+margin:auto;
+padding:40px;
+border-radius:15px;
+box-shadow:0 10px 20px rgba(0,0,0,.15);
+}
+
+input,select{
+width:100%;
+padding:15px;
+margin:10px 0;
+font-size:17px;
+}
+
+footer{
+background:#0b2d4d;
+color:white;
+text-align:center;
+padding:50px;
+}
+
+@media(max-width:768px){
+header{
+padding:20px;
+flex-direction:column;
+}
+.hero h1{
+font-size:40px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">HOLY LAND TOUR</div>
+
+<nav>
+<a href="#">홈</a>
+<a href="#tour">여행상품</a>
+<a href="#gallery">갤러리</a>
+<a href="#reserve">예약</a>
+</nav>
+
+</header>
+
+<div class="hero">
+
+<div class="hero-box">
+
+<h1>예루살렘 성지순례</h1>
+
+<p>성경 속 역사를 직접 걸어보는 특별한 여행</p>
+
+<button class="btn" onclick="document.getElementById('reserve').scrollIntoView()">예약하기</button>
+
+</div>
+
+</div>
+
+<div class="review">
+
+<div class="track">
+
+<span>예수 야호!</span>
+
+<span>예수의 삶을 따라가다.</span>
+
+<span>예수가 부활할곳</span>
+
+<span>또 방문할게요</span>
+
+</div>
+
+</div>
+
+<section id="tour">
+
+<h2 class="title">추천 상품</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1200">
+
+<div class="content">
+
+<h2>예루살렘 성지순례 9일</h2>
+
+<p class="price">7,777,777원</p>
+
+<p>왕복항공권</p>
+
+<p>5성급 호텔</p>
+
+<p>일정 식사 제공</p>
+
+<p>도슨트ㅏ/p>
+
+<br>
+
+<button onclick="reserve()">예약하기</button>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=1200">
+
+<div class="content">
+
+<h2>이스라엘 · 요르단 10일</h2>
+
+<p class="price">4,590,000원</p>
+
+<p>페트라 포함</p>
+
+<p>사해 체험</p>
+
+<p>베들레헴</p>
+
+<p>예루살렘</p>
+
+<br>
+
+<button onclick="reserve()">예약하기</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="gallery">
+
+<h2 class="title">성지 갤러리</h2>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=800">
+
+<img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=800">
+
+<img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5ce?auto=format&fit=crop&w=800">
+
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800">
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">여행 일정</h2>
+
+<div class="schedule">
+
+1일차 인천 → 텔아비브<br>
+2일차 갈릴리 호수<br>
+3일차 가버나움 · 팔복산<br>
+4일차 요단강 · 사해<br>
+5일차 여리고 · 베들레헴<br>
+6일차 감람산 · 겟세마네<br>
+7일차 십자가의 길 · 성묘교회<br>
+8일차 통곡의 벽 · 시온산<br>
+9일차 귀국
+
+</div>
+
+</section>
+
+<section id="reserve">
+
+<h2 class="title">예약하기</h2>
+
+<form>
+
+<input placeholder="성함">
+
+<input placeholder="연락처">
+
+<input placeholder="이메일">
+
+<select>
+
+<option>출발일 선택</option>
+
+<option>2026-09-10</option>
+
+<option>2026-10-15</option>
+
+<option>2026-11-20</option>
+
+</select>
+
+<button type="button" onclick="finish()">예약 신청</button>
+
+</form>
+
+</section>
+
+<footer>
+
+<h2>HOLY LAND TOUR</h2>
+
+<br>
+
+대표번호 02-1234-5678
+
+<br><br>
+
+info@holylandtour.co.kr
+
+<br><br>
+
+©2026 HOLY LAND TOUR
+
+</footer>
+
+<script>
+
+function reserve(){
+document.getElementById("reserve").scrollIntoView({
+behavior:"smooth"
+});
+}
+
+function finish(){
+alert("예약이 접SIU	되었습니다.");
+}
+
+</script>
+
+</body>
+</html>	
